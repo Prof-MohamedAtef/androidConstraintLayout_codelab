@@ -142,5 +142,58 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSendMessage"
         app:srcCompat="@drawable/ic_location" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FABLocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFF"
+        android:clickable="true"
+        android:src="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FABShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FFFF"
+        android:clickable="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintCircle="@id/FABLocation"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintCircleAngle="315"
+        android:src="@drawable/ic_share"
+        tools:layout_editor_absoluteX="359dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FABMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF"
+        android:clickable="true"
+        app:layout_constraintCircle="@id/FABLocation"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintCircleAngle="0"
+        android:src="@drawable/ic_message"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FABRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF"
+        android:clickable="true"
+        app:layout_constraintCircle="@id/FABLocation"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintCircleAngle="270"
+        android:src="@drawable/ic_record"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="670dp" />
+
 
 </android.support.constraint.ConstraintLayout>
